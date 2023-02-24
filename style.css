@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    top: 0;
+}
+body{
+    font-size: 18px;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+img{
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.male{
+    border-color: steelblue;
+    background-color: steelblue;
+}
+
+.female{
+    border-color: palevioletred;
+    background-color: palevioletred;
+}
+
+button{
+    cursor: pointer;
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    padding: 1rem 1.5rem;
+}
+button:hover{
+    scale: 0.95;
+}

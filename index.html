@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link  rel="stylesheet" href="style.css" defer>
+    <script src="/app.js" defer></script>
+    <title>Vue CDN Learning</title>
+</head>
+
+<body>
+    <div id=app>
+        <img v-bind:src="profile" :alt="`${firstname} ${lastname}`" :class="gender">
+        <h1>Hello {{firstname}} {{lastname}}</h1>
+        <h3>Email: {{email}}</h3>
+        <button @click='getUserData()' :class="gender"> Change User</button>
+
+    </div>
+
+</body>
+</html>
