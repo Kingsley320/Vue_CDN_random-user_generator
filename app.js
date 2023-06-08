@@ -1,5 +1,4 @@
 const app = Vue.createApp({
-    // template: '<h1>{{firstname}}</h1>',
     data(){
         return{
             firstname: "Kingsley",
@@ -13,8 +12,6 @@ const app = Vue.createApp({
         async getUserData(){
             const res = await fetch('https://randomuser.me/api/')
             const {results} = await res.json()
-            
-            // console.log(results);
 
             this.firstname = results[0].name.first,
             this.lastname = results[0].name.last,
